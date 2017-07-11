@@ -1,0 +1,7 @@
+set autoscale
+set xlabel "X Coords"
+set ylabel "Y Coords"
+set zlabel "Z Coords"
+splot 'Apexes.txt' using 2:3:1 with lines
+
+pause -1

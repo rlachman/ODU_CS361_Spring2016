@@ -1,0 +1,23 @@
+set yrange [0:100]
+set xrange [0:100]
+
+set xlabel "X Axis"
+set ylabel "Y Axis"
+
+plot 'Dropped_Dust.txt' lc rgb "green" lw 2, \
+     'Dropped_Flechette.txt' lc rgb "purple" lw 2, \
+     'Target_Information.txt' lc rgb "orange" lw 15, \
+     'Dust_being_pinged.txt' lc rgb "black" lw 3, \
+     'Flechette_being_pinged.txt' lc rgb "blue" lw 5
+
+
+
+pause 90
+
+     #"print_1012720" using 1:2 title "Flow 1", \
+     #"print_1058167" using 1:2 title "Flow 2", \
+     #"print_193548"  using 1:2 title "Flow 3", \
+     #"print_401125"  using 1:2 title "Flow 4", \
+     #"print_401275"  using 1:2 title "Flow 5", \
+     #"print_401276"  using 1:2 title "Flow 6"
+#plot
